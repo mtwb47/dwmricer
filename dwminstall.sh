@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 #Arch by default. If you use a Debian/Ubuntu based distor, comment out the arch line and uncomment the apt line. You will also need to download Nerd Fonts seperately. If you're on Ubuntu, you'll need to chang the terminal in .dwm/sxhkd/sxhkdrc to something other than alacritty as it is not packaged by Ubuntu, though it is in the popos repos.
 
