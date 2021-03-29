@@ -33,47 +33,87 @@ Step 7. Log into DWM. (There should be a little cog or something on your log in 
 
 
 # Keybindings That You Should Know
-|MOD p| |spawn dmenucmd|
-|MOD j| |focusstack|
+MOD p --- spawn dmenucmd
+
+MOD j --- focusstack +1
+
 MOD k --- focusstack -1
+
 MOD i --- incnmaster +1
+
 MOD h --- setmfact -0.05
+
 MOD l --- setmfact +0.05
+
 MOD Tab --- view
+
 MOD q --- killclient
+
 MOD t --- setlayout layouts[0]
+
 MOD F1 --- setlayout layouts[2]
+
 MOD m --- setlayout layouts[1]
+
 MOD F2 --- setlayout layouts[3]
+
 MOD F3 --- setlayout layouts[4]
+
 MOD F4 --- setlayout layouts[5]
+
 MOD F5 --- setlayout layouts[6]
+
 MOD F6 --- setlayout layouts[7]
+
 MOD F7 --- setlayout layouts[8]
+
 MOD F8 --- setlayout layouts[9]
+
 MOD F9 --- setlayout layouts[10]
+
 MOD F10 --- setlayout layouts[11]
+
 MOD f --- setlayout layouts[12]
+
 MOD + Ctrl comma --- cyclelayout -1
+
 MOD + Ctrl period --- cyclelayout +1
+
 MOD space --- setlayout
+
 MOD space --- setlayout
+
 MOD + Shift j --- movestack +1
+
 MOD + Shift k --- movestack -1
+
 MOD + Shift space --- togglefloating
+
 MOD 0 --- view ~0
+
 MOD + Shift 0 --- tag ~0
+
 MOD Left --- focusmon -1
+
 MOD Right --- focusmon +1
+
 MOD + Shift Left --- tagmon -1
+
 MOD + Shift Right --- tagmon +1
+
 MOD y --- togglescratch 0
+
 MOD u --- togglescratch 1
+
 MOD n --- togglescratch 2
+
 MOD + Shift n --- togglescratch 3
+
 MOD o --- togglescratch 4
+
 MOD + Shift x --- quit
 
+---------------------
 
 # Things that Could Go Wrong
 
