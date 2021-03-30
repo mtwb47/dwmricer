@@ -3,8 +3,8 @@
 #Arch by default. If you use a Debian/Ubuntu based distor, comment out the arch line and uncomment the apt line. You will also need to download Nerd Fonts seperately. If you're on Ubuntu, you'll need to chang the terminal in .dwm/sxhkd/sxhkdrc to something other than alacritty as it is not packaged by Ubuntu, though it is in the popos repos.
 
 echo "Installing Dependencies"
-sudo pacman -S sxhkd alacritty
-#sudo apt install sxhkd build-essential libx11-dev libxinerama-dev sharutils suckless-tools libxft-dev libc6
+sudo pacman -S sxhkd alacritty rofi
+#sudo apt install sxhkd rofi build-essential libx11-dev libxinerama-dev sharutils suckless-tools libxft-dev libc6
 
 echo "Cloneing Stuff"
 cd $HOME/Downloads/
