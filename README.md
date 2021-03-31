@@ -9,6 +9,7 @@ This script is meant for those who are intimidated by installing DWM by themselv
 * After you install the script, install the fonts from the Hack folder that was included with the script. These fonts are needed to make the bar look right.
 * One of the scripts that the bar uses, weather.py, will need your own Open-WeatherAPI and your location to work. You can get these things by going to https://openweathermap.org
 * If you encounter an error, be sure to get as much detail from the script as possible, then file an issue.
+* The script has no error reporting. So if it errors out, the only notice you'll get is in the script output. I'm aware that this is not best practice, but I'm still learning bash. 
 
 # Usage
 
