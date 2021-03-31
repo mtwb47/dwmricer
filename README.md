@@ -4,6 +4,12 @@
 
 This script is meant for those who are intimidated by installing DWM by themselves or are (like Matt) just too lazy to do it.
 
+## Things to Know Before You Install
+* You need to install git (either sudo pacman -S git or sudo apt install git). 
+* After you install the script, install the fonts from the Hack folder that was included with the script. These fonts are needed to make the bar look right.
+* One of the scripts that the bar uses, weather.py, will need your own Open-WeatherAPI and your location to work. You can get these things by going to https://openweathermap.org
+* If you encounter an error, be sure to get as much detail from the script as possible, then file an issue.
+
 # Usage
 
 Step 1. Download the script
