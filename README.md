@@ -23,25 +23,21 @@ Step 2. CD into that director
 
 	cd dwmricer
 
-Step 3. Use Vim (or another editor) to change the code for your particular distro. This just needs to be done at the top. If you're using Arch, you need not change anything. If you're using Ubuntu, you need to comment out the line that starts sudo pacman, and delete the # sign in front of the line that starts sudo apt install.
-
-Step 4. cd ..
-
-	cd ..
-
-Step 5. Now, run the script. DO NOT RUN AS ROOT!
+Step 3.  Now, run the script. DO NOT RUN AS ROOT!
 
 	./dwmricer
 
-You will be prompted for your password. You may also be asked to confirm the installation of some software by pressing the y button. Do so.
+You will be prompted for your password. You may also be asked to confirm the installation of some software by pressing the y button. Do so. If on Arch or an Arch-based distro, you may be asked which of the base-devel packages to install. Just press enter and install all of them. 
 
 
-Step 6. Log out of your current DE or Window Manager.
+Step 4. Log out of your current DE or Window Manager.
 
-Step 7. Log into DWM. (There should be a little cog or something on your log in screen to change your current session)
+Step 5. Log into DWM. (There should be a little cog or something on your log in screen to change your current session)
 
 
 # Keybindings That You Should Know
+MOD Enter -- Spawn a terminal (if you have alacritty installed)
+
 MOD p --- spawn dmenucmd
 
 MOD j --- focusstack +1
