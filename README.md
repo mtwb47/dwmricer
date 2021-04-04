@@ -12,6 +12,7 @@ This script is meant for those who are intimidated by installing DWM by themselv
 * One of the scripts that the bar uses, weather.py, will need your own Open-WeatherAPI and your location to work. You can get these things by going to https://openweathermap.org
 * If you encounter an error, be sure to get as much detail from the script as possible, then file an issue.
 * The script has no error reporting. So if it errors out, the only notice you'll get is in the script output. I'm aware that this is not best practice, but I'm still learning bash.
+* If you do not use the standard Download folder stucture (i.e $HOME/Downloads) you will need to edit the script and change the download of my scripts folder to whereever you please. 
 
 # Usage
 
