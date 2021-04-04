@@ -18,7 +18,7 @@ This script is meant for those who are intimidated by installing DWM by themselv
 
 Step 1. Download the script
 
-	git clone $URL
+	git clone https://github.com/mtwb47/dwmricer.git
 
 Step 2. CD into that director
 
