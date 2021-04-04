@@ -5,7 +5,7 @@ echo "Installing Dependencies"
 
 if command -v pacman &> /dev/null
 then
-	sudo pacman -S sxhkd alacritty rofi feh
+	sudo pacman -S sxhkd alacritty rofi feh base-devel
 fi
 if command -v apt &> /dev/null
 then
