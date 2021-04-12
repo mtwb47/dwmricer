@@ -12,7 +12,6 @@ then
 	sudo apt install sxhkd rofi build-essential libx11-dev lm-sensors libxinerama-dev sharutils suckless-tools libxft-dev libc6 feh
 fi
 
-
 echo "Cloneing Stuff"
 cd $HOME/Downloads/
 git clone https://github.com/mtwb47/scripts.git
