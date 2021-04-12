@@ -20,6 +20,9 @@ git clone https://github.com/mtwb47/scripts.git
 cd $HOME/.config
 git clone https://github.com/mtwb47/suckless.git
 
+echo "installing fonts"
+cd && cp -r Hack /usr/share/fonts
+
 #Note: Scripts for updates only work on Arch or Arch based distros. Weather script does not work without API, so you'll need to do that manually. If you don't use the standard Downloads folder, you'll need to change these locations.  
 echo "Moving stuff!"
 cd $HOME/.config/suckless
