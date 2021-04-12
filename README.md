@@ -48,10 +48,7 @@ Step 5. Copy this crontab after running "crontab -e" (without the quotes)
 	PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 	@hourly weather.py >> .weather
 	@daily pacupdate.sh >> .updates
-	@daily rsync -av --delete /home /run/media/drmdub/Artemis/Backups/2021/newarco/
-
 	*/3 * * * * temp.sh
-	*/10 * * * * /usr/local/bin/mailsync
 
 Step 6. Log out of your current DE or Window Manager.
 
