@@ -26,6 +26,7 @@ Step 2. CD into that director
 	cd dwmricer
 
 Step 3.
+	
 	cp -r Hack /usr/share/fonts
 
 Step 4.  Now, run the script. DO NOT RUN AS ROOT!
@@ -35,6 +36,7 @@ Step 4.  Now, run the script. DO NOT RUN AS ROOT!
 You will be prompted for your password. You may also be asked to confirm the installation of some software by pressing the y button. Do so. If on Arch or an Arch-based distro, you may be asked which of the base-devel packages to install. Just press enter and install all of them. 
 
 Step 4a. (ONLY IF YOU ARE ON UBUNTU or a DEBIAN BASED DISTRO)
+	
 	cd .dwn/sxhkd
 	vim (Or nano) sxhkdrc
 Edit the Terminal line (super + enter) to a terminal you have installed.
