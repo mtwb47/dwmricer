@@ -145,3 +145,8 @@ MOD + Shift x --- quit
 * My rice of DWM needs Nerd Fonts installed. If you don't have them, you'll need to do so.
 
 * If DWM won't load, chances are it it did not compile correctly, either due to a missing dwm dependency or a permissions issue. Submit an issue and I'll try to help.
+
+# Things to Do in the Future
+* Figure out how to install the fonts from the script itself.
+* Actually set a wallpaper.
+* Give options to user for when I change my rice so they can choose between my new one and the previous one. 
