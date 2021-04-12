@@ -41,8 +41,6 @@ cd ../dmenu
 rm config.h
 make && sudo make install
 
-cd
-
 echo "Creating Login Manager Entry for DWM"
 cd /usr/share/xsessions
 sudo touch dwm.desktop
