@@ -12,6 +12,8 @@ then
 	sudo apt install sxhkd rofi build-essential libx11-dev lm-sensors libxinerama-dev sharutils suckless-tools libxft-dev libc6 feh
 fi
 
+touch .updates .temp $HOME/.config/.temps
+
 echo "Cloneing Stuff"
 cd $HOME/Downloads/
 git clone https://github.com/mtwb47/scripts.git
@@ -23,7 +25,7 @@ echo "Moving stuff!"
 cd $HOME/.config/suckless
 mv .dwm ~
 cd $HOME/Downloads/scripts
-sudo mv pacupdate.sh cpuicon.sh diskicon.sh mailicon.sh mpdicon.sh pacmanicon.sh ramicon.sh tempicon.sh timeicon.sh upicon.sh volumeicon.sh /usr/local/bin
+sudo mv pacupdate.sh cpuicon.sh diskicon.sh mailicon.sh mpdicon.sh pacmanicon.sh ramicon.sh tempicon.sh timeicon.sh upicon.sh volumeicon.sh volume.sh temp.sh /usr/local/bin
 
 echo "making things"
 cd $HOME/.config/suckless/dwm
