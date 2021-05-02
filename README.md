@@ -4,7 +4,7 @@
 
 # Matt's DWM Auto Installing - Ricing - Script
 
-This script is meant for those who are intimidated by installing DWM by themselves or are (like Matt) just too lazy to do it.
+This script is meant for those who are intimidated by installing DWM by themselves or are (like Matt) just too lazy to do it. Just note that even after using this script there are still things you must do to get my setup. (Inlcuding moving scripts, setting up cronjobs and so on).
 
 ## Things to Know Before You Install
 * You need to install git (either sudo pacman -S git or sudo apt install git).
