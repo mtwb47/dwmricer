@@ -4,7 +4,7 @@
 
 # Matt's DWM Auto Installing - Ricing - Script
 
-This script is meant for those who are intimidated by installing DWM by themselves or are (like Matt) just too lazy to do it.
+This script is meant for those who are intimidated by installing DWM by themselves or are (like Matt) just too lazy to do it. Just note that even after using this script there are still things you must do to get my setup. (Inlcuding moving scripts, setting up cronjobs and so on).
 
 ## Things to Know Before You Install
 * You need to install git (either sudo pacman -S git or sudo apt install git).
@@ -26,6 +26,7 @@ Step 2. CD into that director
 	cd dwmricer
 
 Step 3.
+	
 	cp -r Hack /usr/share/fonts
 
 Step 4.  Now, run the script. DO NOT RUN AS ROOT!
@@ -35,6 +36,7 @@ Step 4.  Now, run the script. DO NOT RUN AS ROOT!
 You will be prompted for your password. You may also be asked to confirm the installation of some software by pressing the y button. Do so. If on Arch or an Arch-based distro, you may be asked which of the base-devel packages to install. Just press enter and install all of them. 
 
 Step 4a. (ONLY IF YOU ARE ON UBUNTU or a DEBIAN BASED DISTRO)
+	
 	cd .dwn/sxhkd
 	vim (Or nano) sxhkdrc
 Edit the Terminal line (super + enter) to a terminal you have installed.
@@ -46,10 +48,7 @@ Step 5. Copy this crontab after running "crontab -e" (without the quotes)
 	PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 	@hourly weather.py >> .weather
 	@daily pacupdate.sh >> .updates
-	@daily rsync -av --delete /home /run/media/drmdub/Artemis/Backups/2021/newarco/
-
 	*/3 * * * * temp.sh
-	*/10 * * * * /usr/local/bin/mailsync
 
 Step 6. Log out of your current DE or Window Manager.
 
@@ -146,3 +145,8 @@ MOD + Shift x --- quit
 * My rice of DWM needs Nerd Fonts installed. If you don't have them, you'll need to do so.
 
 * If DWM won't load, chances are it it did not compile correctly, either due to a missing dwm dependency or a permissions issue. Submit an issue and I'll try to help.
+
+# Things to Do in the Future
+* Figure out how to install the fonts from the script itself.
+* Actually set a wallpaper.
+* Give options to user for when I change my rice so they can choose between my new one and the previous one. 
