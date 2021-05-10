@@ -8,7 +8,6 @@ This script is meant for those who are intimidated by installing DWM by themselv
 
 ## Things to Know Before You Install
 * You need to install git (either sudo pacman -S git or sudo apt install git).
-* After you install the script, install the fonts from the Hack folder that was included with the script. These fonts are needed to make the bar look right.
 * One of the scripts that the bar uses, weather.py, will need your own Open-WeatherAPI and your location to work. You can get these things by going to https://openweathermap.org
 * If you encounter an error, be sure to get as much detail from the script as possible, then file an issue.
 * The script has no error reporting. So if it errors out, the only notice you'll get is in the script output. I'm aware that this is not best practice, but I'm still learning bash.
@@ -25,23 +24,13 @@ Step 2. CD into that director
 
 	cd dwmricer
 
-Step 3.
-	
-	cp -r Hack /usr/share/fonts
-
-Step 4.  Now, run the script. DO NOT RUN AS ROOT!
+Step 3.  Now, run the script. DO NOT RUN AS ROOT!
 
 	./dwmricer
 
 You will be prompted for your password. You may also be asked to confirm the installation of some software by pressing the y button. Do so. If on Arch or an Arch-based distro, you may be asked which of the base-devel packages to install. Just press enter and install all of them. 
 
-Step 4a. (ONLY IF YOU ARE ON UBUNTU or a DEBIAN BASED DISTRO)
-	
-	cd .dwn/sxhkd
-	vim (Or nano) sxhkdrc
-Edit the Terminal line (super + enter) to a terminal you have installed.
-
-Step 5. Copy this crontab after running "crontab -e" (without the quotes)
+Step 4. Copy this crontab after running "crontab -e" (without the quotes) NOTE: You may need to install cronie for this to work.
 
 	SHELL=/bin/bash
 	MAILTO=root@example.com
@@ -50,9 +39,9 @@ Step 5. Copy this crontab after running "crontab -e" (without the quotes)
 	@daily pacupdate.sh >> .updates
 	*/3 * * * * temp.sh
 
-Step 6. Log out of your current DE or Window Manager.
+Step 5. Log out of your current DE or Window Manager.
 
-Step 7. Log into DWM. (There should be a little cog or something on your log in screen to change your current session)
+Step 6. Log into DWM. (There should be a little cog or something on your log in screen to change your current session)
 
 
 # Keybindings That You Should Know
