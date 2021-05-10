@@ -50,7 +50,7 @@ if command -v apt &> /dev/null
 	  sed -r 's/alacritty/kitty/g' sxhkdrc1 > sxhkdrc
 fi
 
-cd  && rm -r dwmricer
+cd  && sudo rm -r dwmricer
 
 echo "Creating Login Manager Entry for DWM"
 cd /usr/share/xsessions
