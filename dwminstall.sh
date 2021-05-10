@@ -9,7 +9,7 @@ then
 fi
 if command -v apt &> /dev/null
 then
-	sudo apt install sxhkd rofi build-essential libx11-dev lm-sensors libxinerama-dev sharutils suckless-tools libxft-dev libc6 feh && wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip && unzip Hack.zip && mkdir -p $HOME/.local/share/fonts/nerdfonts/Hack && mv *.ttf $HOME/.local/share/fonts/nerdfonts/Hack && fc-cache -f -v 
+	sudo apt install sxhkd kitty rofi build-essential libx11-dev lm-sensors libxinerama-dev sharutils suckless-tools libxft-dev libc6 feh && wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip && unzip Hack.zip && mkdir -p $HOME/.local/share/fonts/nerdfonts/Hack && mv *.ttf $HOME/.local/share/fonts/nerdfonts/Hack && fc-cache -f -v 
 fi
 
 touch .updates .temp $HOME/.config/.temps
@@ -20,8 +20,6 @@ git clone https://github.com/mtwb47/scripts.git
 cd $HOME/.config
 git clone https://github.com/mtwb47/suckless.git
 
-echo "installing fonts"
-cd && cp -r Hack /usr/share/fonts
 
 #Note: Scripts for updates only work on Arch or Arch based distros. Weather script does not work without API, so you'll need to do that manually. If you don't use the standard Downloads folder, you'll need to change these locations.  
 echo "Moving stuff!"
@@ -44,6 +42,15 @@ cd ../dmenu
 rm config.h
 make && sudo make install
 
+
+if command -v apt &> /dev/null
+  then
+	  cd $HOME/.dwm/sxhkd 
+	  sed -r 's/alacritty/kitty/g' sxhkdrc1 > sxhkdrc
+fi
+
+cd  && rm -r dwmricer
+
 echo "Creating Login Manager Entry for DWM"
 cd /usr/share/xsessions
 sudo touch dwm.desktop
@@ -58,5 +65,4 @@ Icon=dwm
 Type=XSession
 
 EOF
-
 
