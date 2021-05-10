@@ -46,6 +46,7 @@ make && sudo make install
 if command -v apt &> /dev/null
   then
 	  cd $HOME/.dwm/sxhkd 
+	  mv sxhkdrc sxhkdrc1
 	  sed -r 's/alacritty/kitty/g' sxhkdrc1 > sxhkdrc
 fi
 
