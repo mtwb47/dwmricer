@@ -137,7 +137,7 @@ MOD + Shift x --- quit
 * If DWM won't load, chances are it it did not compile correctly, either due to a missing dwm dependency or a permissions issue. Submit an issue and I'll try to help.
 
 # Things to Do in the Future
-[x] Figure out how to install the fonts from the script itself.
-[ ] Actually set a wallpaper.
-[ ] Give options to user for when I change my rice so they can choose between my new one and the previous one. 
-[ ] Error reporting, and better scripting for when something goes wrong.  
+✅ Figure out how to install the fonts from the script itself.
+* Actually set a wallpaper.
+* Give options to user for when I change my rice so they can choose between my new one and the previous one. 
+* Error reporting, and better scripting for when something goes wrong.  
