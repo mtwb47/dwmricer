@@ -140,4 +140,4 @@ MOD + Shift x --- quit
 ✅ Figure out how to install the fonts from the script itself.
 * Actually set a wallpaper.
 * Give options to user for when I change my rice so they can choose between my new one and the previous one. 
-* Error reporting, and better scripting for when something goes wrong.  
+* Error reporting, and better scripting for when something goes wrong.  (this is a major one that I'll be working on next)
