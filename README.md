@@ -14,6 +14,8 @@ This script is meant for those who are intimidated by installing DWM by themselv
 * If you do not use the standard Download folder stucture (i.e $HOME/Downloads) you will need to edit the script and change the download of my scripts folder to whereever you please. 
 * After install you'll need to run crontab -e and add in the crontab below. If you do not, several things will not work.
 * This may or may not work on vanilla Arch Linux, depending on what repos you have enabled in your pacman.conf file. If you get DWM and everything installed, but can't open a terminal, make sure you manually install alacritty, sxhkd, and rofi. This is something that I'll work on in the future. 
+* If you use a distro that defaults to wayland, you need to have xserver installed and all the appropriate dependencies.
+* If you use a Display manager that runs in Wayland (GDM specifically), you'll find that DWM will log in and then pop you right back to the login screen. I'll do a video on how to fix this. 
 
 # Usage
 
