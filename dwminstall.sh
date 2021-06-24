@@ -14,7 +14,7 @@ fi
 
 touch .updates .temp $HOME/.config/.temps
 
-echo "Cloneing Stuff"
+echo "Cloning Stuff"
 cd $HOME/Downloads/
 git clone https://github.com/mtwb47/scripts.git
 cd $HOME/.config
