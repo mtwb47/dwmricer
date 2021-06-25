@@ -4,7 +4,7 @@
 
 # Matt's DWM Auto Installing - Ricing - Script
 
-This script is meant for those who are intimidated by installing DWM by themselves or are (like Matt) just too lazy to do it. Just note that even after using this script there are still things you must do to get my setup. (Inlcuding moving scripts, setting up cronjobs and so on).
+This script is meant for those who are intimidated by installing DWM by themselves or are (like Matt) just too lazy to do it. Just note that even after using this script there are still things you must do to get my setup. (Including setting up cronjobs and so on).
 
 ## Things to Know Before You Install
 * You need to install git (either sudo pacman -S git or sudo apt install git).
@@ -13,7 +13,7 @@ This script is meant for those who are intimidated by installing DWM by themselv
 * The script has no error reporting. So if it errors out, the only notice you'll get is in the script output. I'm aware that this is not best practice, but I'm still learning bash.
 * If you do not use the standard Download folder stucture (i.e $HOME/Downloads) you will need to edit the script and change the download of my scripts folder to whereever you please. 
 * After install you'll need to run crontab -e and add in the crontab below. If you do not, several things will not work.
-* This may or may not work on vanilla Arch Linux, depending on what repos you have enabled in your pacman.conf file. If you get DWM and everything installed, but can't open a terminal, make sure you manually install alacritty, sxhkd, and rofi. This is something that I'll work on in the future. 
+* This may or may not work on vanilla Arch Linux, depending on what repos you have enabled in your pacman.conf file.
 * If you use a distro that defaults to wayland, you need to have xserver installed and all the appropriate dependencies.
 * If you use a Display manager that runs in Wayland (GDM specifically), you'll find that DWM will log in and then pop you right back to the login screen. I'll do a video on how to fix this. 
 
@@ -23,7 +23,7 @@ Step 1. Download the script
 
 	git clone https://github.com/mtwb47/dwmricer.git
 
-Step 2. CD into that director
+Step 2. CD into that directory
 
 	cd dwmricer
 
