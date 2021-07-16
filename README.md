@@ -15,6 +15,9 @@ This script is meant for those who are intimidated by installing DWM by themselv
 * After install you'll need to run crontab -e and add in the crontab below. If you do not, several things will not work.
 * This may or may not work on vanilla Arch Linux, depending on what repos you have enabled in your pacman.conf file. If you get DWM and everything installed, but can't open a terminal, make sure you manually install alacritty, sxhkd, and rofi. This is something that I'll work on in the future. 
 
+There is now a purple rice in the Purple Branch
+
+
 # Usage
 
 Step 1. Download the script
