@@ -6,22 +6,22 @@ echo "Installing Dependencies"
 if command -v pacman &> /dev/null
 then
 	sudo pacman -S sxhkd alacritty rofi feh base-devel lm_sensors trizen && trizen -S nerd-fonts-hack
-fi
-if command -v apt &> /dev/null
+elif command -v apt-get &> /dev/null
 then
-	sudo apt install sxhkd kitty rofi build-essential libx11-dev lm-sensors libxinerama-dev sharutils suckless-tools libxft-dev libc6 feh && wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip && unzip Hack.zip && mkdir -p $HOME/.local/share/fonts/nerdfonts/Hack && mv *.ttf $HOME/.local/share/fonts/nerdfonts/Hack && fc-cache -f -v 
+	sudo apt-get install sxhkd kitty rofi build-essential libx11-dev lm-sensors libxinerama-dev sharutils suckless-tools libxft-dev libc6 feh && wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip && unzip Hack.zip && mkdir -p $HOME/.local/share/fonts/nerdfonts/Hack && mv *.ttf $HOME/.local/share/fonts/nerdfonts/Hack && fc-cache -f -v
 fi
 
 touch .updates .temp $HOME/.config/.temps
 
-echo "Cloneing Stuff"
+echo "Cloning Stuff"
 cd $HOME/Downloads/
 git clone https://github.com/mtwb47/scripts.git
 cd $HOME/.config
 git clone https://github.com/mtwb47/suckless.git
 
-
-#Note: Scripts for updates only work on Arch or Arch based distros. Weather script does not work without API, so you'll need to do that manually. If you don't use the standard Downloads folder, you'll need to change these locations.  
+# Scripts for updates only work on Arch or Arch based distros. Weather script
+# does not work without API, so you'll need to do that manually. If you don't
+# use the standard Downloads folder, you'll need to change these locations.
 echo "Moving stuff!"
 cd $HOME/.config/suckless
 mv .dwm ~
@@ -43,11 +43,11 @@ rm config.h
 make && sudo make install
 
 
-if command -v apt &> /dev/null
-  then
-	  cd $HOME/.dwm/sxhkd 
-	  mv sxhkdrc sxhkdrc1
-	  sed -r 's/alacritty/kitty/g' sxhkdrc1 > sxhkdrc
+if command -v apt-get &> /dev/null
+then
+	cd $HOME/.dwm/sxhkd
+	mv sxhkdrc sxhkdrc1
+	sed -r 's/alacritty/kitty/g' sxhkdrc1 > sxhkdrc
 fi
 
 cd  && sudo rm -r dwmricer
